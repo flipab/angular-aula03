@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'artigaria-movie-list',
+  selector: 'FlipFlix-movie-list',
   templateUrl: './movie-list.component.html',
   styleUrls: ['./movie-list.component.css']
 })
