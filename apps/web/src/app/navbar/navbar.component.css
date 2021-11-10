@@ -4,3 +4,9 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
+h1 {
+  margin: 5px;
+  padding: 0px;
+  color: white;
+}
