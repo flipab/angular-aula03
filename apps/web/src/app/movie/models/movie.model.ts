@@ -3,7 +3,7 @@ export interface Movie {
   nome: string;
   genero: string;
   imagem: string;
-  ano: number;
+  ano: string;
 }
 
 export const movies: Movie[] = [
