@@ -1,7 +1,8 @@
 <ul *ngIf="movies$ | async"> <!--aqui vai o pipe async, mostrando o observable da lista de filmes, e o pipe async lida com o subscribe ou unsubscribe dos filmes-->
   <li *ngfor="let movie of movies">
-    {{movie.nome}}
-
+    <a [routerLink]="movie.id">
+      <img [src]="movie.imagem" />
+    </a>
   </li>
 
 </ul>
