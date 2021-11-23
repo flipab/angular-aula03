@@ -20,17 +20,17 @@ export class MovieDetailComponent implements OnInit, OnDestroy {
     private route: ActivatedRoute,
     ) {}
 
-  ngOnInit(): {
-    this.id = +this.route.Snapshot.paramMap.get('id'); /**tudo que tem this esta quebrado */
-    this.movieSub$ = this.movieService.movie(this.id);
+  ngOnInit() {
+    this.id = +this.route.snapshot.paramMap.get('id'); /**tudo que tem this esta quebrado */
+    this.movieSub$ = this.movieService.movie(this.id).subscribe(movie =>{
     this.movie = movie;
     console.log(this.movie);
   });
 
 }
 
-  ngOnDestroy(): void (
+  ngOnDestroy(): void {
     this.movieSub$.unsubscribe();
-  )
-
+  }
+}
 
